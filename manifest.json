@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "name": "Image Text Extractor",
+  "version": "1.0.0",
+  "description": "A browser extension that extracts text from images and YouTube videos.",
+  "icons": {
+    "48": "src/assets/images/icon-48.png",
+    "96": "src/assets/images/icon-96.png"
+  },
+  "permissions": ["activeTab", "<all_urls>", "storage"],
+  "browser_action": {
+    "default_icon": "src/assets/images/icon-48.png",
+    "default_popup": "src/popup/popup.html",
+    "default_title": "Image Text Extractor"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+        "node_modules/tesseract.js/dist/tesseract.min.js",
+        "src/content/content.js"
+      ]
+    }
+  ],
+  "options_ui": {
+    "page": "src/options/options.html",
+    "open_in_tab": true
+  },
+  "background": {
+    "scripts": ["src/background/background.js"],
+    "persistent": false
+  }
+}

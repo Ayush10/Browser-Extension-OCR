@@ -1,0 +1,101 @@
+<!-- Code for that  Design the basic layout of the extension's popup UI. Where there is a upload button which allows the user to upload images from their device. A preview image which allows the user to preview the uploaded image. A capture screen button which allows the user to capture a part of the screen and the captured screen is automatically copied and previewed on the preview image section and then a text box where the text from the uploaded image or the captured screen is presented and then copy text button which copies the text from the text box. Also include the css classes. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Popup</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="upload">
+            <input type="file" id="file" accept="image/*">
+            <label for="file" class="upload-label">Upload</label>
+        </div>
+        <div class="preview">
+            <img src="" alt="" class="preview-image">
+        </div>
+        <div class="capture">
+            <button class="capture-btn">Capture Screen</button>
+        </div>
+        <div class="text">
+            <textarea name="" id="" cols="30" rows="10" class="text-box"></textarea>
+        </div>
+        <div class="copy">
+            <button class="copy-btn">Copy Text</button>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Text Extractor</title>
+    <link rel="stylesheet" href="css/popup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Image Text Extractor</h1>
+      <!-- Add this button within the body -->
+      <button id="capture-screen-btn">Capture Screen</button>
+
+      <button id="extractTextButton" class="button">Extract Text</button>
+      <textarea id="extractedText" readonly></textarea>
+      <button id="copyTextButton" class="button">Copy Text</button>
+    </div>
+    <script src="js/popup.js"></script>
+  </body>
+</html>
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 300px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin: 0 0 15px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #4285f4;
+  color: #fff;
+  text-align: center;
+  font-size: 1em;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.button:hover {
+  background-color: #2a75d2;
+}
+
+#extractedText {
+  width: 100%;
+  min-height: 100px;
+  resize: vertical;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1em;
+  margin-bottom: 15px;
+} -->
+
+

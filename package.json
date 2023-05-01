@@ -1,0 +1,14 @@
+{
+  "name": "youtube-video-text-extractor",
+  "version": "1.0.0",
+  "description": "This extention is developed to extract text from youtube videos and make it easier for everyone to get some information.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ayush Ojha",
+  "license": "ISC",
+  "dependencies": {
+    "tesseract.js": "^4.0.3"
+  }
+}
